@@ -6,11 +6,16 @@ $database = 'eliotdb';
 $port = '3306';
 
 $conn = mysqli_connect($hostname, $username, $password, $database, $port);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $cone->connect_error);
+//testConnection($conn);
+
+function testConnection($conn)
+{
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    echo "Connected successfully";
+    cerrarConexion();
 }
-echo "Connected successfully";
 
 function cerrarConexion()
 {

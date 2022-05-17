@@ -1,11 +1,12 @@
 <?php
 $hostname = 'localhost';
-$username = 'insert';
-$password = 'permisoS0l01nsert';
+$username = 'update';
+$password = 'permisoS0l0upd4t3';
 $database = 'eliotdb';
 $port = '3306';
 
 $conn = mysqli_connect($hostname, $username, $password, $database, $port);
+// Check connection
 //testConnection($conn);
 
 function testConnection($conn)
@@ -16,6 +17,7 @@ function testConnection($conn)
     echo "Connected successfully";
     cerrarConexion();
 }
+
 
 function cerrarConexion()
 {

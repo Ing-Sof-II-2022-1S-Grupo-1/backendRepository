@@ -1,7 +1,7 @@
 <?php
 $hostname = 'localhost';
-$username = 'insert';
-$password = 'permisoS0l01nsert';
+$username = 'delete';
+$password = 'permisoS0l0d3l3t3';
 $database = 'eliotdb';
 $port = '3306';
 
