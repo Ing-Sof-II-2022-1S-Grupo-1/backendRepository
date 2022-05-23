@@ -17,7 +17,7 @@
         <form id="form1" method="POST">
             <input type="text" name="idUsuario" placeholder="IDUsuario">
             <input type="text" name="nombresUsuario" placeholder="Nombre Usuario">
-            <button type="button" onclick="updateUsuario();" class="btn btn-primary" form="formCreate">Hacer consulta</button>
+            <button type="button" onclick="updateUsuario();" class="btn btn-primary">Hacer consulta</button>
         </form>
     </div>
 
