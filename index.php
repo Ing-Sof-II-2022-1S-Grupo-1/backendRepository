@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <h1> Vamos a hacer una consulta </h1>
+    <h1>Vamos a hacer una consulta</h1>
     <div>
         <form id="form1" method="POST">
             <input type="text" name="idUsuario" placeholder="IDUsuario">
