@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="funcionesCRUD.js"></script>
     <title>Document</title>
 </head>
 
@@ -56,7 +57,6 @@
             <input type="text" name="usuario" placeholder="Usuario">
             <input type="text" name="correo" placeholder="Correo">
             <input type="text" name="contrasena" placeholder="Contraseña">
-            <input type="number" name="estado" placeholder="Estado">
             <button type="button" onclick="createUsuario();" class="btn btn-primary">Crear usuario</button>
         </form>
     </div>
@@ -65,7 +65,6 @@
         <form id="form7" method="POST">
             <input type="text" name="alias" placeholder="Alias">
             <input type="text" name="ip" placeholder="IP">
-            <input type="text" name="estado" placeholder="Estado">
             <input type="text" name="idUsuario" placeholder="ID Usuario">
             <button type="button" onclick="createCCTV();" class="btn btn-primary">Crear cctv</button>
         </form>
@@ -78,13 +77,11 @@
             <input type="text" name="serial" placeholder="Serial">
             <input type="text" name="marca" placeholder="Marca">
             <input type="text" name="modelo" placeholder="Modelo">
-            <input type="number" name="estado" placeholder="Estado">
             <input type="number" name="idCCTV" placeholder="ID CCTV">
             <button type="button" onclick="createCamara();" class="btn btn-primary">Crear camara</button>
         </form>
     </div>
 </body>
 
-<script src = "funcionesCRUD.js"></script>
 
 </html>

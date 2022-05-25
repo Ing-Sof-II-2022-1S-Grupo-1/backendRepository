@@ -1,6 +1,4 @@
 <?php
-
-
 $hostname = 'localhost';
 $username = 'insert';
 $password = 'permisoS0l01nsert';
@@ -9,7 +7,6 @@ $port = '3306';
 
 $conn = mysqli_connect($hostname, $username, $password, $database, $port);
 //testConnection($conn);
-
 
 
 function testConnection($conn)
@@ -26,5 +23,3 @@ function cerrarConexion()
     global $conn;
     mysqli_close($conn);
 }
-
-
