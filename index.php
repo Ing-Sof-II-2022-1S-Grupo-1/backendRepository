@@ -34,6 +34,55 @@
             <button type="button" onclick="deleteSensor();" class="btn btn-primary">Borrar sensor</button>
         </form>
     </div>
+    <h1>Borremos un usuario</h1>
+    <div>
+        <form id="form4" method="POST">
+            <input type="text" name="IDUsuario" placeholder="Id del usuario a borrar">
+            <button type="button" onclick="deleteUsuario();" class="btn btn-primary">Borrar usuario</button>
+        </form>
+    </div>
+    <h1>Borremos un switch</h1>
+    <div>
+        <form id="form5" method="POST">
+            <input type="text" name="IDSwitch" placeholder="Id del switch a borrar">
+            <button type="button" onclick="deleteSwitch();" class="btn btn-primary">Borrar switch</button>
+        </form>
+    </div>
+    <h1>Creamos un usuario</h1>
+    <div>
+        <form id="form6" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="text" name="usuario" placeholder="Usuario">
+            <input type="text" name="correo" placeholder="Correo">
+            <input type="text" name="contrasena" placeholder="Contraseña">
+            <input type="number" name="estado" placeholder="Estado">
+            <button type="button" onclick="createUsuario();" class="btn btn-primary">Crear usuario</button>
+        </form>
+    </div>
+    <h1>Creamos un CCTV</h1>
+    <div>
+        <form id="form7" method="POST">
+            <input type="text" name="alias" placeholder="Alias">
+            <input type="text" name="ip" placeholder="IP">
+            <input type="text" name="estado" placeholder="Estado">
+            <input type="text" name="idUsuario" placeholder="ID Usuario">
+            <button type="button" onclick="createCCTV();" class="btn btn-primary">Crear cctv</button>
+        </form>
+    </div>
+    <h1>Creamos una camara</h1>
+    <div>
+        <form id="form8" method="POST">
+            <input type="text" name="ip" placeholder="IP">
+            <input type="text" name="alias" placeholder="Alias">
+            <input type="text" name="serial" placeholder="Serial">
+            <input type="text" name="marca" placeholder="Marca">
+            <input type="text" name="modelo" placeholder="Modelo">
+            <input type="number" name="estado" placeholder="Estado">
+            <input type="number" name="idCCTV" placeholder="ID CCTV">
+            <button type="button" onclick="createCamara();" class="btn btn-primary">Crear camara</button>
+        </form>
+    </div>
 </body>
 
 <script src = "funcionesCRUD.js"></script>
