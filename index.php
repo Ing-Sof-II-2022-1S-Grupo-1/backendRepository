@@ -48,6 +48,18 @@
             <button type="button" onclick="deleteSwitch();" class="btn btn-primary">Borrar switch</button>
         </form>
     </div>
+    <h1>Creamos un usuario</h1>
+    <div>
+        <form id="form6" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="text" name="usuario" placeholder="Usuario">
+            <input type="text" name="correo" placeholder="Correo">
+            <input type="text" name="contrasena" placeholder="Contraseña">
+            <input type="number" name="estado" placeholder="Estado">
+            <button type="button" onclick="createUsuario();" class="btn btn-primary">Crear usuario</button>
+        </form>
+    </div>
 </body>
 
 <script src = "funcionesCRUD.js"></script>

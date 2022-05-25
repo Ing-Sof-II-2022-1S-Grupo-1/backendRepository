@@ -26,3 +26,5 @@ function cerrarConexion()
     global $conn;
     mysqli_close($conn);
 }
+
+
