@@ -20,27 +20,22 @@
             <button type="button" onclick="updateUsuario();" class="btn btn-primary">Hacer consulta</button>
         </form>
     </div>
-
+    <h1>Borremos una cámara:</h1>
+    <div>
+        <form id="form2" method="POST">
+            <input type="text" name="idCamara" placeholder="Id de la cámara a borrar">
+            <button type="button" onclick="deleteCamara();" class="btn btn-primary">Borrar camara</button>
+        </form>
+    </div>
+    <h1>Borremos un sensor</h1>
+    <div>
+        <form id="form3" method="POST">
+            <input type="text" name="idSensor" placeholder="Id de la cámara a sensor">
+            <button type="button" onclick="deleteSensor();" class="btn btn-primary">Borrar sensor</button>
+        </form>
+    </div>
 </body>
-<script>
-    function updateUsuario() {
-        let nombre = '#form1'; //Nombre del formulario del cual deseamos extraer la información
-        let datos = $(nombre).serialize();  //Serializamos la información para pasarla por PHP
-        $.ajax({
-            type: "POST",   //Método de petición HTTP
-            url: "CRUDs/usuario/updateUsuario.php",     //Página PHP para hacer la Query
-            data: datos,      //Datos serializados para mandar a la URL PHP
-            success: function(r) {      //Despúes de correr la página PHP
-                if (r == 1) {      //Nos devuelve 1 si es exitosa la Query
-                    alert("Cambios Guardados con exito");
-                    window.location.reload();
-                    return 0;
-                } else if (r == 2) {  //Nos devuelve 2 si NO es exitosa la Query
-                    alert("Upps ha ocurrido un error al intentar actualizar el Usuario, intenta de nuevo");
-                }
-            }
-        });
-    }
-</script>
+
+<script src = "funcionesCRUD.js"></script>
 
 </html>
