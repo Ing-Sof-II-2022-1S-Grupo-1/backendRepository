@@ -30,7 +30,7 @@
     <h1>Borremos un sensor</h1>
     <div>
         <form id="form3" method="POST">
-            <input type="text" name="idSensor" placeholder="Id de la cámara a sensor">
+            <input type="text" name="idSensor" placeholder="Id del sensor a borrar">
             <button type="button" onclick="deleteSensor();" class="btn btn-primary">Borrar sensor</button>
         </form>
     </div>
