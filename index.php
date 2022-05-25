@@ -70,6 +70,19 @@
             <button type="button" onclick="createCCTV();" class="btn btn-primary">Crear cctv</button>
         </form>
     </div>
+    <h1>Creamos una camara</h1>
+    <div>
+        <form id="form8" method="POST">
+            <input type="text" name="ip" placeholder="IP">
+            <input type="text" name="alias" placeholder="Alias">
+            <input type="text" name="serial" placeholder="Serial">
+            <input type="text" name="marca" placeholder="Marca">
+            <input type="text" name="modelo" placeholder="Modelo">
+            <input type="number" name="estado" placeholder="Estado">
+            <input type="number" name="idCCTV" placeholder="ID CCTV">
+            <button type="button" onclick="createCamara();" class="btn btn-primary">Crear camara</button>
+        </form>
+    </div>
 </body>
 
 <script src = "funcionesCRUD.js"></script>
