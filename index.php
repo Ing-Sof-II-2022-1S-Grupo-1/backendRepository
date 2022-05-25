@@ -34,6 +34,13 @@
             <button type="button" onclick="deleteSensor();" class="btn btn-primary">Borrar sensor</button>
         </form>
     </div>
+    <h1>Borremos un usuario</h1>
+    <div>
+        <form id="form4" method="POST">
+            <input type="text" name="IDUsuario" placeholder="Id del usuario a borrar">
+            <button type="button" onclick="deleteUsuario();" class="btn btn-primary">Borrar usuario</button>
+        </form>
+    </div>
 </body>
 
 <script src = "funcionesCRUD.js"></script>
