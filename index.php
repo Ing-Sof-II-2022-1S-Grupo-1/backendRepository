@@ -41,6 +41,13 @@
             <button type="button" onclick="deleteUsuario();" class="btn btn-primary">Borrar usuario</button>
         </form>
     </div>
+    <h1>Borremos un switch</h1>
+    <div>
+        <form id="form5" method="POST">
+            <input type="text" name="IDSwitch" placeholder="Id del switch a borrar">
+            <button type="button" onclick="deleteSwitch();" class="btn btn-primary">Borrar switch</button>
+        </form>
+    </div>
 </body>
 
 <script src = "funcionesCRUD.js"></script>
