@@ -106,7 +106,7 @@ function createUsuario() {
                 alert("Cambios Guardados con exito");
                 window.location.reload();
                 return 0;
-            } else if (r != 1) { //Nos devuelve 2 si NO es exitosa la Query
+            } else if (r == 2) { //Nos devuelve 2 si NO es exitosa la Query
                 alert("Upps ha ocurrido un error al intentar borrar el sensor, intenta de nuevo");
             }
         }
