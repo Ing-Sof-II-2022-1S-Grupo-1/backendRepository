@@ -60,6 +60,16 @@
             <button type="button" onclick="createUsuario();" class="btn btn-primary">Crear usuario</button>
         </form>
     </div>
+    <h1>Creamos un CCTV</h1>
+    <div>
+        <form id="form7" method="POST">
+            <input type="text" name="alias" placeholder="Alias">
+            <input type="text" name="ip" placeholder="IP">
+            <input type="text" name="estado" placeholder="Estado">
+            <input type="text" name="idUsuario" placeholder="ID Usuario">
+            <button type="button" onclick="createCCTV();" class="btn btn-primary">Crear cctv</button>
+        </form>
+    </div>
 </body>
 
 <script src = "funcionesCRUD.js"></script>
