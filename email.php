@@ -1,10 +1,14 @@
 <?php
 // El mensaje
+$paraCorreo = "kmilito2002@gmail.com";
+$titulo = "Recuperación de Contraseña";
 $mensaje = "Hola :D";
+$tuCorreo = "From: noresponderEliot@gmail.com";
 
-// Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
-$mensaje = wordwrap($mensaje, 70, "\r\n");
+if (mail($paraCorreo, $titulo, $mensaje, $tuCorreo)) {
+    echo "Correo Envíado";
+} else {
+    echo "eroor";
+}
 
-// Enviarlo
-mail('kmilito2002@gmail.com', 'Mi título', $mensaje);
 ?>
