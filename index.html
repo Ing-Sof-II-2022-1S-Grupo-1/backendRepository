@@ -53,6 +53,14 @@
         </form>
     </div>
 
+    <h1>Borremos un CCTV</h1>
+    <div>
+        <form id="form11" method="POST">
+            <input type="text" name="idCCTV" placeholder="Id del cctv a borrar">
+            <button type="button" onclick="deleteCCTV();" class="btn btn-primary">Borrar cctv</button>
+        </form>
+    </div>
+
     <h1>Creamos un usuario</h1>
     <div>
         <form id="form6" method="POST">
@@ -61,6 +69,7 @@
             <input type="text" name="usuario" placeholder="Usuario">
             <input type="text" name="correo" placeholder="Correo">
             <input type="text" name="contrasena" placeholder="Contraseña">
+            <input type="text" name="estado" placeholder="Estado">
             <button type="button" onclick="createUsuario();" class="btn btn-primary">Crear usuario</button>
         </form>
     </div>
@@ -85,6 +94,43 @@
             <input type="text" name="modelo" placeholder="Modelo">
             <input type="number" name="idCCTV" placeholder="ID CCTV">
             <button type="button" onclick="createCamara();" class="btn btn-primary">Crear camara</button>
+        </form>
+    </div>
+
+    <h1>Creamos un sensor</h1>
+    <div>
+        <form id="form9" method="POST">
+            <input type="text" name="ip" placeholder="IP">
+            <input type="text" name="alias" placeholder="Alias">
+            <input type="text" name="datos" placeholder="Datos">
+            <input type="number" name="estado" placeholder="Estado">
+            <input type="number" name="idCCTV" placeholder="ID CCTV">
+            <button type="button" onclick="createSensor();" class="btn btn-primary">Crear sensor</button>
+        </form>
+    </div>
+
+    <h1>Creamos un switch</h1>
+    <div>
+        <form id="form10" method="POST">
+            <input type="text" name="ip" placeholder="IP">
+            <input type="text" name="alias" placeholder="Alias">
+            <input type="number" name="estado" placeholder="Estado">
+            <input type="number" name="idCCTV" placeholder="ID CCTV">
+            <button type="button" onclick="createSwitch();" class="btn btn-primary">Crear sensor</button>
+        </form>
+    </div>
+
+    <h1>Actualizamos un usuario</h1>
+    <div>
+        <form id="form12" method="POST">
+            <input type="number" name="id" placeholder="id del usuario a actualizar">
+            <input type="text" name="nombre" placeholder="Nombre nuevo">
+            <input type="text" name="apellido" placeholder="Apellido nuevo">
+            <input type="text" name="usuario" placeholder="Usuario nuevo">
+            <input type="text" name="correo" placeholder="Correo nuevo">
+            <input type="text" name="contrasena" placeholder="Contraseña nuevo">
+            <input type="number" name="estado" placeholder="Estado nuevo">
+            <button type="button" onclick="updateUsuario();" class="btn btn-primary">Actualizar Usuario</button>
         </form>
     </div>
 </body>
