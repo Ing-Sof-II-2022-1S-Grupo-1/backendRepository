@@ -6,11 +6,12 @@ try {
     $usuario = $_POST['usuario'] ?? '';     //Extraemos del serializado el valor de la variable
     $correo = $_POST['correo'] ?? '';     //Extraemos del serializado el valor de la variable
     $contrasena = $_POST['contrasena'] ?? '';     //Extraemos del serializado el valor de la variable
-    
+    $estado = $_POST['estado'] ?? '';     //Extraemos del serializado el valor de la variable
+
     //Preparamos la consulta y la realizamos
     $result = $conn->query("INSERT INTO USUARIO (nombresUsuario, apellidosUsuario, 
                                          usernameUsuario,correoUsuario, passwordUsuario, estadoUsuario)   
-                                VALUES ('$nombre', '$apellido', '$usuario', '$correo', '$contrasena', 1);");
+                                VALUES ('$nombre', '$apellido', '$usuario', '$correo', '$contrasena', $estado);");
 
     cerrarConexion();  //Finalizamos la conexión
 
