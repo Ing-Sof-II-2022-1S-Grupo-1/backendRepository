@@ -80,6 +80,7 @@
             <input type="text" name="alias" placeholder="Alias">
             <input type="text" name="ip" placeholder="IP">
             <input type="text" name="idUsuario" placeholder="ID Usuario">
+            <input type="text" name="estado" placeholder="Estado">
             <button type="button" onclick="createCCTV();" class="btn btn-primary">Crear cctv</button>
         </form>
     </div>
@@ -132,6 +133,16 @@
             <input type="number" name="estado" placeholder="Estado nuevo">
             <button type="button" onclick="updateUsuario();" class="btn btn-primary">Actualizar Usuario</button>
         </form>
+    </div>
+
+    <h1>Actualizamos un CCTV</h1>
+    <div>
+        <form id="form13" method="POST">
+            <input type="text" name="id" placeholder="id del cctv a actualizar">
+            <input type="text" name="ip" placeholder="IP">
+            <input type="text" name="alias" placeholder="Alias">
+            <input type="text" name="estado" placeholder="estado">
+            <button type="button" onclick="updateCCTV();" class="btn btn-primary">Actualizar cctv</button></form>
     </div>
 </body>
 
