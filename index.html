@@ -138,14 +138,41 @@
     <h1>Actualizamos un CCTV</h1>
     <div>
         <form id="form13" method="POST">
-            <input type="text" name="id" placeholder="id del cctv a actualizar">
+            <input type="number" name="id" placeholder="id del cctv a actualizar">
             <input type="text" name="ip" placeholder="IP">
             <input type="text" name="alias" placeholder="Alias">
-            <input type="text" name="estado" placeholder="estado">
+            <input type="number" name="estado" placeholder="estado">
             <button type="button" onclick="updateCCTV();" class="btn btn-primary">Actualizar cctv</button></form>
+    </div>
+
+    <h1>Actualizamos una camara </h1>
+    <div>
+        <form id="form14" method="POST">
+            <input type="number" name="id" placeholder="id de la camara a actualizar">
+            <input type="text" name="ip" placeholder="IP">
+            <input type="text" name="alias" placeholder="Alias">
+            <input type="text" name="serial" placeholder="numero serial">
+            <input type="text" name="marca" placeholder="Marca">
+            <input type="text" name="modelo" placeholder="Modelo">
+            <input type="number" name="estado" placeholder="Estado">
+            <input type="number" name="idCCTV" placeholder="Id del CCTV al que pertenece">
+            <button type="button" onclick="updateCam();" class="btn btn-primary">Actualizar cctv</button></form>
+    </div>
+
+    <h1>Actualizamos un sensor</h1>
+    <div>
+        <form id="form15" method="POST">
+            <input type="number" name="id" placeholder="id del sensor a actualizar">
+            <input type="text" name="ip" placeholder="IP">
+            <input type="text" name="alias" placeholder="Alias">
+            <input type="text" name="datos" placeholder="datos">
+            <input type="number" name="estado" placeholder="Estado">
+            <input type="number" name="idCCTV" placeholder="Id del CCTV al que pertenece">
+            <button type="button" onclick="updateSensor();" class="btn btn-primary">Actualizar sensor</button></form>
     </div>
 </body>
 
+
 <script src="funcionesCRUD.js" crossorigin="anonymous"></script>
 
-</html>
+</html> 

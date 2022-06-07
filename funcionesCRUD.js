@@ -231,6 +231,26 @@ function updateUsuario() {
     });
 }
 
+function updateCam() {
+    let nombre = '#form14'; //Nombre del formulario del cual deseamos extraer la información
+    let datos = $(nombre).serialize(); //Serializamos la información para pasarla por PHP
+    alert("Hola");
+    $.ajax({
+        type: "POST", //Método de petición HTTP
+        url: "CRUDs/camara/updateCamara.php", //Página PHP para hacer la Query
+        data: datos, //Datos serializados para mandar a la URL PHP
+        success: function(r) { //Despúes de correr la página PHP
+            if (r == 1) { //Nos devuelve 1 si es exitosa la Query
+                alert("Cambios Guardados con exito");
+                window.location.reload();
+                return 0;
+            } else if (r == 2) { //Nos devuelve 2 si NO es exitosa la Query
+                alert("Upps ha ocurrido un error al intentar borrar el sensor, intenta de nuevo");
+            }
+        }
+    });
+}
+
 function updateCCTV() {
     let nombre = '#form13'; //Nombre del formulario del cual deseamos extraer la información
     let datos = $(nombre).serialize(); //Serializamos la información para pasarla por PHP
@@ -249,3 +269,23 @@ function updateCCTV() {
         }
     });
 }
+
+function updateSensor() {
+    let nombre = '#form15'; //Nombre del formulario del cual deseamos extraer la información
+    let datos = $(nombre).serialize(); //Serializamos la información para pasarla por PHP
+    $.ajax({
+        type: "POST", //Método de petición HTTP
+        url: "CRUDs/sensor/updateSensor.php", //Página PHP para hacer la Query
+        data: datos, //Datos serializados para mandar a la URL PHP
+        success: function(r) { //Despúes de correr la página PHP
+            if (r == 1) { //Nos devuelve 1 si es exitosa la Query
+                alert("Cambios Guardados con exito");
+                window.location.reload();
+                return 0;
+            } else if (r == 2) { //Nos devuelve 2 si NO es exitosa la Query
+                alert("Upps ha ocurrido un error al intentar borrar el sensor, intenta de nuevo");
+            }
+        }
+    });
+}
+
